@@ -1,0 +1,127 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  border: 0 none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-weight: 700;
+  background-image: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #428f58;
+  border-radius: 32px;
+  margin-bottom: 10%;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #0f0f0f;
+  z-index: 0;
+}
+
+.main-bg {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+  height: inherit;
+}
+
+.main__action {
+  max-width: 680px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.main__action > h1 {
+  line-height: 1.23;
+  font-weight: 600;
+  font-size: 52px;
+  color: #fff;
+}
+
+.main__action > h1 > span {
+  color: #428f58;
+}
+
+.main__action > p {
+  line-height: 1.55;
+  padding: 40px 0 54px;
+  font-weight: 300;
+  font-size: 22px;
+  color: #fff;
+}
+
+.main__action > button > a {
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  font-size: 16px;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 1px) and (max-width: 640px) {
+  button {
+    width: 100%;
+  }
+  .main__action > h1 {
+    font-size: 30px;
+  }
+  .main__action > p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 960px) {
+  .main__action > h1 {
+    font-size: 48px;
+  }
+  .main__action > p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .main-bg {
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+  }
+  .main__action {
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+}
