@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PMJ</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrapper">
+        <img class="main-bg" src="./test.jpg" />
+        <div class="container">
+          <div class="main__action">
+            <h1>
+              Как осознанно работать с криптовалютой в 2023 году и
+              <span id="typed"></span>
+              <div style="display: none" id="typed-strings">
+                <span>принимать платежи</span>
+                <span>показывать услуги</span>
+              </div>
+            </h1>
+            <p>Даже в условиях блокировки бирж, западных санкций и скачков курса</p>
+            <button>
+              <a href="#">Получить информацию</a>
+            </button>
+          </div>
+        </main>
+        </div>
+      </div>
+     
+
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+      <script>
+        let typed = new Typed('#typed', { // Тут id того блока, в которм будет анимация
+          stringsElement: '#typed-strings', // Тут id блока из которого берем строки для анимации
+          typeSpeed: 100, // Скорость печати
+          startDelay: 500, // Задержка перед стартом анимации
+          backSpeed: 50, // Скорость удаления
+          loop: true, // Указываем, повторять ли анимацию
+      });
+      </script>
+  </body>
+</html>
